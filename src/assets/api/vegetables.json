@@ -1,0 +1,46 @@
+{
+    "vegetables": [
+        {
+            "alias": "aglio",
+            "name": "Aglio",
+            "goodCombo": ["carota", "cetriolo"],
+            "badCombo": ["cavoli"]
+        },
+        {
+            "alias": "aneto",
+            "name": "Aneto",
+            "goodCombo": ["carota", "cavoli", "cetriolo"],
+            "badCombo": []
+        },
+        {
+            "alias": "basilico",
+            "name": "Basilico",
+            "goodCombo": [],
+            "badCombo": []
+        },
+        {
+            "alias": "bietola",
+            "name": "Bietola",
+            "goodCombo": ["carota", "cavoli"],
+            "badCombo": []
+        },
+        {
+            "alias": "borragine",
+            "name": "Borragine",
+            "goodCombo": [],
+            "badCombo": []
+        },
+        {
+            "alias": "camomilla",
+            "name": "Camomilla",
+            "goodCombo": ["cavoli"],
+            "badCombo": []
+        },
+        {
+            "alias": "carota",
+            "name": "Carota",
+            "goodCombo": ["aglio", "aneto", "borragine"],
+            "badCombo": []
+        }
+    ]
+}

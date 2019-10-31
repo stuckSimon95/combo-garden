@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Your Garden
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-title color="primary"><h1>What's the size ?</h1></ion-title>
+
+  <ion-list>
+    <ion-item>
+      <ion-title color="secondary"><h3>Cells</h3></ion-title>
+      <ion-select placeholder="Select One" okText="OK" cancelText="BACK" 
+      (ionChange)="OnSizeChange($event)" interface="popover">
+        <ion-select-option *ngFor="let size of sizes" value="{{size.value}}">
+          {{size.text}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item> 
+  </ion-list>
+
+  <ion-grid>
+    <ion-row *ngFor="let nRow of sizeArray">
+      <ion-col *ngFor="let nCol of sizeArray">
+
+        <ion-card color="light">
+
+          <ion-select placeholder="Select Veg" okText="OK" cancelText="BACK" 
+          (ionChange)="OnVegSelected($event, nRow, nCol)" id="{{nRow}}-{{nCol}}">
+            <ion-select-option *ngFor="let veg of vegetables" value="{{veg.alias}}">
+              <ion-text><h3>{{veg.name}}</h3></ion-text>
+            </ion-select-option>
+          </ion-select>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>
